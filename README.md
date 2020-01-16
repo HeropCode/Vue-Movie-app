@@ -68,7 +68,7 @@ Axios는 HTTP 클라이언트 라이브러리로써, OMDb API를 통해 영화 �
 
 https://github.com/shershen08/vue-masonry#readme
 
-검색된 영화 목록을 핀터레스트 스타일의 레이아웃으로 구성하기 위해 사용합니다.
+검색된 영화 목록을 핀터레스트 스타일의 레이아웃으로 구성하기 위해 사용합니다.<br>
 [vue-masonry](https://github.com/shershen08/vue-masonry#readme)는 [Masonry](https://masonry.desandro.com/) 라이브러리를 Vue.js로 랩핑한 모듈입니다.
 
 ## Firebase Hosting
