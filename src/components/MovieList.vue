@@ -13,9 +13,9 @@
       sm="6">
       <v-card>
         <v-img
-          :src="movie.Poster"
+          :src="posterSrc(movie.Poster)"
           :alt="movie.Title"
-          :height="movie.Poster === 'N/A' ? 100 : 305">
+          :height="posterHeight(movie.Poster)">
           <template v-slot:placeholder>
             <div style="background: lightgray; height: 100%;"></div>
           </template>
@@ -37,6 +37,14 @@ export default {
   computed: {
     movies () {
       return this.$store.state.movie.movies
+    }
+  },
+  methods: {
+    posterSrc (poster) {
+      return poster === 'N/A' ? '' : poster
+    },
+    posterHeight (poster) {
+      return poster === 'N/A' ? 100 : 300
     }
   }
 }

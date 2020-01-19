@@ -3,7 +3,7 @@
     <v-text-field
       v-model="title"
       outlined
-      @keypress.enter="getMovies">
+      @keypress.enter="searchMovies">
       <template v-slot:prepend-inner>
         <v-icon>search</v-icon>
       </template>
@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     ...mapActions('movie', [
-      'getMovies'
+      'searchMovies'
     ])
   }
 }
