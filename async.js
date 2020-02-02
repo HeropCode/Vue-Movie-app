@@ -142,8 +142,8 @@ function a() {
 }
 
 a()
-  .then(res => { console.log(res) })
-  .catch(error => { console.log(error.message) })
+  .then(res => { console.log(res) }) // res is MY_DATA
+  .catch(error => { console.log(error.message) }) // error is ERROR_OBJECT
   .finally(() => { console.log('Finally') })
 
 
@@ -163,8 +163,8 @@ function a() {
 async function asyncFunc() {
   try {
     const res = await a()
-    console.log(res)
-  } catch (error) {
+    console.log(res) // res is MY_DATA
+  } catch (error) { // error is ERROR_OBJECT
     console.log(error.message)
   } finally {
     console.log('Finally')
