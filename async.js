@@ -57,7 +57,7 @@ function b(cb) {
   setTimeout(function () {
     console.log('b')
     cb()
-  })
+  }, 1000)
 }
 // c함수 d함수 등...
 
