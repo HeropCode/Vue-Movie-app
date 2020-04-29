@@ -1,5 +1,11 @@
 # Vue Movie list app
 
+- 같은 테스트 환경을 위해 Vue CLI를 `4.1.2` 버전으로 설치하도록 문서를 수정했습니다.
+- 모든 모듈의 버전은 [Package.json](https://github.com/HeropCode/Vue-Movie-app/blob/master/package.json) 파일을 참고해주세요.
+- 강의 영상의 NodeJS 버전은 `10.15.0`이며, 그 이상의 LTS 버전(짝수 버전)을 사용하시길 권장합니다.
+- 강의 영상의 NPM 버전은 `6.5.0`이며, 역시 그 이상의 버전을 사용하시길 권장합니다.
+- 버그 및 수정/건의 사항 등은 [Issues](https://github.com/HeropCode/Vue-Movie-app/issues) 혹은 thesecon@gmail.com으로 문의 부탁드립니다.
+
 [Todo App](https://github.com/HeropCode/Vue-Todo-app) 예제를 통해 Vue CLI 없이 개발 환경을 구성했다면,<br>
 이번에는 [Vue CLI](https://cli.vuejs.org/)를 사용해 손쉽고 빠르게 개발 환경을 구성합니다.<br>
 
@@ -13,13 +19,14 @@ Vue CLI를 전역 모드(`-g`)로 설치합니다.<br>
 `vue`명령어를 사용할 수 있습니다.
 
 ```bash
-$ npm i @vue/cli -g
+$ npm i @vue/cli@4.1.2 -g
 ```
 
 다음과 설치 및 버전을 확인할 수 있습니다.
 
 ```bash
 $ vue --version
+# @vue/cli 4.1.2
 ```
 
 Vue CLI를 통해 쉽게 프로젝트를 (바탕화면에 혹은 원하는 위치에) 생성합니다.
