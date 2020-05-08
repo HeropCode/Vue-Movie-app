@@ -1,5 +1,7 @@
 # Vue Movie list app
 
+- 단위 테스트(Unit test) 버전이 추가되었습니다.
+  - `unit-test` Branch에서 확인할 수 있습니다.
 - 같은 테스트 환경을 위해 Vue CLI를 `4.1.2` 버전으로 설치하도록 문서를 수정했습니다.
 - 모든 모듈의 버전은 [Package.json](https://github.com/HeropCode/Vue-Movie-app/blob/master/package.json) 파일을 참고해주세요.
 - 강의 영상의 NodeJS 버전은 `10.15.0`이며, 그 이상의 LTS 버전(짝수 버전)을 사용하시길 권장합니다.
