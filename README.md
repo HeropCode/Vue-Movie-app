@@ -103,7 +103,13 @@ $ firebase deploy
 단위(Unit) 테스트란 상태, 메소드, 컴포넌트 등의 정의된 프로그램 최소 단위들이 독립적으로 정상 동작하는지 확인하는 것을 말합니다.<br>
 이를 통해 프로그램 전체의 신뢰도를 향상하고 코드 리팩터링(Code refactoring)의 부담을 줄일 수 있습니다.
 
-테스트를 위해 다음 모듈들을 설치합니다.
+CLI에서 Jest를 직접 실행하기 위해 전역 설치합니다.
+
+```bash
+$ npm install -g jest
+```
+
+테스트를 위해 프로젝트에 다음 모듈들을 설치합니다.
 
 ```bash
 $ npm install -D jest @vue/test-utils vue-jest babel-jest babel-core@bridge
