@@ -22,7 +22,7 @@ describe('movie store', () => {
     }
   })
 
-  test('상태를 업데이트', () => {
+  test('state 업데이트', () => {
     // 설정
     const payload = {
       title: 'Hello!',

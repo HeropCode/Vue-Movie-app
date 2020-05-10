@@ -30,17 +30,17 @@ describe('MovieList Component', () => {
     })
   })
 
-  test('영화 제목이 출력되어야 합니다', () => {
+  test('영화 제목 출력', () => {
     // 확인
     expect(wrapper.find('v-card-title-stub').text()).toBe('영화 제목')
   })
 
-  test('개봉년도가 출력되어야 합니다', () => {
+  test('개봉년도 출력', () => {
     // 확인
     expect(wrapper.find('v-card-subtitle-stub').text()).toBe('2020')
   })
 
-  test('이미지가 경로가 있는 경우', () => {
+  test('이미지 경로가 있는 경우', () => {
     // 확인
     const img = wrapper.find('v-img-stub')
     expect(img.attributes('src')).toBe('image.jpg')
