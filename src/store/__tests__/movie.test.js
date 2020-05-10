@@ -2,6 +2,9 @@ import cloneDeep from 'lodash/cloneDeep'
 import axios from 'axios'
 import movie from '../movie'
 
+// 모의(Mock) 모듈
+jest.mock('axios')
+
 describe('movie store', () => {
   let store
   beforeEach(() => {
@@ -12,6 +15,8 @@ describe('movie store', () => {
       store.mutations[name](store.state, payload)
     }
     store.dispatch = function (name, payload) {
+      // context 구조
+      // https://vuex.vuejs.org/kr/api/#actions
       const context = {
         state: store.state,
         commit: store.commit,
@@ -49,7 +54,7 @@ describe('movie store', () => {
   test('영화 목록을 잘 가져왔을 때', async () => {
     // 설정
     // Mocking
-    axios.get = jest.fn().mockResolvedValue({
+    axios.get.mockResolvedValue({
       data: {
         totalResults: '1',
         Search: [
@@ -77,7 +82,7 @@ describe('movie store', () => {
 
   test('영화 목록을 가져오지 못했을 때', async () => {
     // 설정
-    axios.get = jest.fn().mockRejectedValue(new Error('Network Error'))
+    axios.get.mockRejectedValue(new Error('Network Error'))
     // 동작
     await store.dispatch('searchMovies')
     // 확인
