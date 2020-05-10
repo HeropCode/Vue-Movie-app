@@ -25,7 +25,7 @@ describe('SearchBar Component', () => {
 
   test('로딩 중 아이콘 확인', async () => {
     // 확인
-    expect(wrapper.find('.v-progress-circular__info').exists()).toBe(false)
+    expect(wrapper.find('.v-progress-circular').exists()).toBe(false)
     // 설정
     wrapper.vm.$store.commit('movie/updateState', {
       loading: true
@@ -33,6 +33,6 @@ describe('SearchBar Component', () => {
     // 동작
     await wrapper.vm.$nextTick()
     // 확인
-    expect(wrapper.find('.v-progress-circular__info').exists()).toBe(true)
+    expect(wrapper.find('.v-progress-circular').exists()).toBe(true)
   })
 })
