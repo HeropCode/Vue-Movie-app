@@ -1,12 +1,10 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import Vuex from 'vuex'
 import Vuetify from 'vuetify'
 import store from '@/store'
 import SearchBar from '../SearchBar'
 
 const localVue = createLocalVue()
 localVue.use(Vuetify)
-localVue.use(Vuex)
 
 describe('SearchBar Component', () => {
   let wrapper
